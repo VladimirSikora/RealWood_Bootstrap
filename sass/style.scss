@@ -1,0 +1,844 @@
+@import '../css/bootstrap.css';
+@import "../fonts/fonts.css";
+body{
+  position: relative;
+  .container-fluid{
+    padding: 0;
+  }
+}
+a{
+  text-decoration: none!important;
+  color: black!important;
+}
+section{
+  margin-bottom: 15px;
+}
+section.header{
+  margin-top: 5px;
+  div{
+    span:first-child{
+      &::after{
+        content: '';
+      }
+    }
+  }
+}
+nav#navbar-example{
+  left: 0;
+  border-radius: 0;
+  border: none;
+  min-height: 0;
+  font-size: 15px;
+  width: 100%;
+  z-index: 99;
+  background-color: #e6e6e6;
+  ul.navCustom{
+    li.active{
+      a{
+        background-color: #e6e6e6;
+        border: none;
+        border-bottom: solid #90bc3b 2px;
+        &:focus{
+          background-color: #e6e6e6;
+        }
+        &:hover{
+          background-color: #e6e6e6;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  ul.navCustom{
+    float: none;
+    li{
+      display: inline-block;
+      width: 100%;
+      padding: 0;
+      &:last-child{
+        margin: 0.25em 0;
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  ul.navCustom{
+    margin: 0 auto;
+    padding: 0;
+    li{
+      padding: 0;
+      display: inline-block;
+      width: 13%;
+      float: left;
+      &:last-child{
+        width: 22%;
+        padding: 0.25em 0;
+
+      }
+    }
+  }
+}
+#before-after{
+  div{
+    div:first-child{
+      min-height: 362px;
+      background: url("../img/imgFlat.jpg") no-repeat top center;
+      background-size: cover;
+    }
+    div:last-child{
+      div{
+        background: url("../img/3-xBackground.jpg") no-repeat top center;
+        min-height: 120px;
+        background-size: cover;
+        height: 120px;
+        width: auto;
+        margin-bottom: 1px;
+        span{
+          display: inline-block;
+          color: #fff;
+          background: #8cc63e;
+          padding: 0.5em 1em;
+          font-family: "Open Sans Regular";
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+.headSection{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  div{
+    div.heading{
+      float: left;
+      h3{
+        font-family: "Open Sans Regular";
+        font-size: 25px;
+        margin: 0px;
+      }
+    }
+    div.btn-green-lite{
+      a{
+        color: #659a00!important;
+        border: solid 1px #90bc3b;
+        border-radius: 3px;
+        padding: 4px;
+        text-decoration: none;
+        cursor: pointer;
+        font-family: "Open Sans Regular";
+        font-size: 15px;
+      }
+    }
+  }
+}
+.production{
+  margin-top: 20px;
+  div{
+    div{
+      div{
+        div{
+          min-height: 135px;
+          border: none;
+          margin: 5%;
+          text-align: center;
+          h4{
+            font-size: 20px;
+            font-family: "Open Sans Regular";
+          }
+        }
+        border: 1px solid #e6e6e6;
+      }
+      &:hover div{
+        background: url("../img/floor.jpg")no-repeat top center;
+        background-size: cover;
+        color: #fff;
+        div:last-child{
+          background: none;
+        }
+      }
+    }
+    div:nth-child(1) div div.image{
+      background: url("../img/floor_green.png")no-repeat center #f2f2f2;
+    }
+    div:nth-child(1):hover div div.image{
+      background: url("../img/floor_white.png")no-repeat center;
+    }
+    div:nth-child(2) div div.image{
+      background: url("../img/wall_green.png")no-repeat center #f2f2f2;
+    }
+    div:nth-child(2):hover div div.image{
+      background: url("../img/wall_white.png")no-repeat center;
+    }
+    div:nth-child(3) div div.image{
+      background: url("../img/sun_green.png")no-repeat center #f2f2f2;
+    }
+    div:nth-child(3):hover div div.image{
+      background: url("../img/sun_white.png")no-repeat center;
+    }
+    div:nth-child(4) div div.image{
+      background: url("../img/termo_green.png")no-repeat center #f2f2f2;
+    }
+    div:nth-child(4):hover div div.image{
+      background: url("../img/termo_white.png")no-repeat center;
+    }
+  }
+}
+//Section "SuperDeal"
+div.content-box{
+  border: solid 1px #e6e6e6;
+  div:first-child{
+    min-height: 190px;
+    p{
+      font-family: "Open Sans Regular";
+      margin: 0;
+      color: #fff;
+      font-size: 18px;
+      display: inline-block;
+      background: #8cc63e;
+      padding: 1em 0.5em;
+    }
+  }
+  div:last-child{
+    min-height: 100px;
+    p{
+      font-family: "Open Sans Regular";
+      font-size: 15px;
+      color: #000;
+    }
+    b{
+      font-family: "Open Sans Regular";
+      font-size: 20px;
+      color: #000;
+    }
+    s{
+      font-family: "Open Sans Regular";
+      font-size: 15px;
+      color: #999;
+    }
+    margin-bottom: 10px;
+    margin-left: 5%;
+  }
+  &:hover{
+    -webkit-box-shadow: 3px 3px 7px 0px rgba(220,220,220,1);
+    -moz-box-shadow: 3px 3px 7px 0px rgba(220,220,220,1);
+    box-shadow: 3px 3px 7px 0px rgba(220,220,220,1);
+    div:first-child{
+      p{
+        font-family: "Open Sans Light";
+        font-size: 22px;
+      }
+    }
+    div:last-child{
+      p{
+        color: #518d00;
+      }
+    }
+  }
+}
+section.SuperDeal{
+  div{
+    &:nth-child(1){
+      div{
+        &:nth-child(1){
+          div:first-child{
+            background: url("../img/deals_1.jpg")no-repeat top center;
+            background-size: cover;
+          }
+          div:last-child{
+            background: none;
+          }
+        }
+        &:nth-child(2){
+          div:first-child{
+            background: url("../img/deals_2.jpg")no-repeat top center;
+            background-size: cover;
+          }
+          div:last-child{
+            background: none;
+          }
+        }
+        &:nth-child(3){
+          div:first-child{
+            background: url("../img/deals_3.jpg")no-repeat top center;
+            background-size: cover;
+          }
+          div:last-child{
+            background: none;
+          }
+        }
+        &:nth-child(4){
+          div:first-child{
+            background: url("../img/deals_4.jpg")no-repeat top center;
+            background-size: cover;
+          }
+          div:last-child{
+            background: none;
+          }
+        }
+      }
+    }
+    &.row2{
+      margin-top: 2%;
+      div{
+        &:nth-child(1){
+          div:first-child{
+            background: url("../img/deals_1.jpg")no-repeat top center;
+            background-size: cover;
+          }
+          div:last-child{
+            background: none;
+          }
+        }
+        &:nth-child(2){
+          div:first-child{
+            background: url("../img/deals_2.jpg")no-repeat top center;
+            background-size: cover;
+          }
+          div:last-child{
+            background: none;
+          }
+        }
+        &:nth-child(3){
+          div:first-child{
+            background: url("../img/deals_3.jpg")no-repeat top center;
+            background-size: cover;
+          }
+          div:last-child{
+            background: none;
+          }
+        }
+        &:nth-child(4){
+          div:first-child{
+            background: url("../img/deals_4.jpg")no-repeat top center;
+            background-size: cover;
+          }
+          div:last-child{
+            background: none;
+          }
+        }
+      }
+    }
+  }
+}
+// Section "RealWood this..."
+section.realWoodThis{
+  padding-top: 10px;
+  background: #f5f5f5;
+  div{
+    div:nth-child(2){
+      div{
+        min-height: 190px;
+        div:first-child{
+          min-height: 130px;
+          margin-bottom: 15px;
+        }
+        div:last-child{
+          text-align: center;
+          p{
+            font-family: "Open Sans Regular";
+            font-size: 20px;
+          }
+          span{
+            font-family: "Open Sans Regular";
+            font-size: 15px;
+          }
+        }
+      }
+      div:hover{
+        div:last-child{
+          p{
+            color: #6ea600;
+          }
+        }
+      }
+      div:first-child{
+        div:first-child{
+          background: url("../img/teamGreen.png")no-repeat center;
+        }
+        &:hover{
+          div:first-child{
+            background: url("../img/teamWhite.png")no-repeat center;
+          }
+        }
+      }
+      div:nth-child(2){
+        div:first-child{
+          background: url("../img/plantsGreen.png")no-repeat center;
+        }
+        &:hover{
+          div:first-child{
+            background: url("../img/plantsWhite.png")no-repeat center;
+          }
+        }
+      }
+      div:nth-child(3){
+        div:first-child{
+          background: url("../img/woodGreen.png")no-repeat center;
+        }
+        &:hover{
+          div:first-child{
+            background: url("../img/woodWhite.png")no-repeat center;
+          }
+        }
+      }
+      div:last-child{
+        div:first-child{
+          background: url("../img/pigGreen.png")no-repeat center;
+        }
+        &:hover{
+          div:first-child{
+            background: url("../img/pigWhite.png")no-repeat center;
+          }
+        }
+      }
+    }
+  }
+}
+section.bestSeller{
+  div:last-child{
+    div{
+      div:first-child{
+        min-height: 135px;
+      }
+      div:last-child{
+        font-family: "Open Sans Regular";
+        p:first-child{
+          font-size: 23px;
+        }
+        p:nth-child(2){
+          font-size: 20px;
+        }
+        span{
+          font-size: 15px;
+        }
+        div{
+          margin-top: 10%;
+        }
+      }
+    }
+    div:nth-child(1){
+      div:first-child{
+        background: url("../img/bestseller_img1.jpg")no-repeat bottom center;
+        background-size: cover;
+        min-height: 135px;
+      }
+    }
+    div:nth-child(2){
+      div:first-child{
+        background: url("../img/bestseller_img2.jpg")no-repeat bottom center;
+        background-size: cover;
+      }
+    }
+    div:nth-child(3){
+      div:first-child{
+        background: url("../img/bestseller_img3.jpg")no-repeat bottom center;
+        background-size: cover;
+      }
+    }div:nth-child(4){
+       div:first-child{
+         background: url("../img/bestseller_img4.jpg")no-repeat bottom center;
+         background-size: cover;
+       }
+     }
+  }
+}
+.btn-green-dark{
+  display: inline-block;
+  font-size: 15px;
+  font-family: "Open Sans Regular";
+  color: #fff!important;
+  padding: 0.25em 1em!important;
+  border-radius: 4px;
+  background-color: rgb(144, 188, 59)!important;
+  text-decoration: none;
+  a{
+    color: #fff!important;
+  }
+}
+// SectionForm
+section.sectionForm{
+  background: url("../img/sectionFormBackground.jpg")no-repeat left center;
+  background-size: cover;
+  color: #fff;
+  h3{
+    font-family: "Open Sans Regular";
+    font-size: 25px;
+  }
+  p{
+    font-family: "Open Sans Light";
+    font-size: 20px;
+    margin: 16px 0;
+  }
+  span{
+    font-family: "Open Sans Light";
+    font-size: 67px;
+  }
+  select{
+    /*for WebKit*/
+    -webkit-appearance: none;
+    /* for FF */
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    /* for IE */
+    -ms-appearance: none;
+    appearance: none!important;
+    background: rgba(255, 255, 255, 0.7) url("../img/dropdown.png") no-repeat right center;
+    color: #fff;
+    border-radius: 4px;
+    height: 36px;
+    width: 92%;
+    margin: 16px 4% 16px 0%;
+    &.lesser{
+      width: 42%;
+      margin: 4% 8% 4% 0%;
+      float: left;
+    }
+    option{
+      background: #c5c5c5;
+    }
+  }
+  div{
+    div{
+      form{
+        div:nth-child(2){
+          margin-top: 10%;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+// SectionForm
+section.sectionForm{
+  background: url("../img/sectionFormBackground.jpg")no-repeat left center;
+  background-size: cover;
+  color: #fff;
+  h3{
+    font-family: "Open Sans Regular";
+    font-size: 25px;
+  }
+  p{
+    font-family: "Open Sans Light";
+    font-size: 20px;
+    margin: 16px 0;
+  }
+  span{
+    font-family: "Open Sans Light";
+    font-size: 67px;
+  }
+  select{
+    /*for WebKit*/
+    -webkit-appearance: none;
+    /* for FF */
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    /* for IE */
+    -ms-appearance: none;
+    appearance: none!important;
+    background: rgba(255, 255, 255, 0.7) url("../img/dropdown.png") no-repeat right center;
+    color: #fff;
+    border-radius: 4px;
+    width: 92%;
+    margin: 16px 4% 16px 0%;
+    padding-left: 10px;
+    &.lesser{
+      width: 42%;
+      margin: 4% 8% 4% 0%;
+      float: left;
+    }
+    option{
+      background: #c5c5c5;
+    }
+  }
+}
+section#slider{
+  font-family: "Open Sans Light";
+  font-size: 20px;
+  div.headSection{
+    div:last-child{
+      span{
+        padding:5px;
+        border: solid 1px #e6e6e6;
+        cursor: pointer;
+        text-align: right;
+        float: right;
+        &:first-child{
+          margin-right: 0px;
+        }
+        &:last-child{
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+  div{
+    ul#slider-content{
+      color: white;
+      li{
+        display: none;
+        div:first-child{
+          div{
+            background: none;
+            margin: 5% 0 2% 0;
+          }
+        }
+        div:last-child{
+          background-color: rgba(0,0,0,0.6);
+        }
+      }
+      li:nth-child(1){
+        background: url("../img/slider.jpg")no-repeat center;
+      }
+      li:nth-child(2){
+        background: url("../img/imgFlat.jpg")no-repeat center;
+        background-size: cover;
+      }
+    }
+  }
+}
+.slider-active{
+  display: flex!important;
+  min-height: 400px;
+}
+#ourPlants{
+  margin-bottom: 15px;
+  div{
+    div.useful{
+      div.row{
+        div{
+          margin-bottom: 11px;
+          div.row{
+            margin-bottom: 0;
+            div:first-child{
+              margin-bottom: 0;
+              img{
+                max-height: 125px;
+                max-width: 125px;
+              }
+            }
+            div:last-child{
+              margin-bottom: 0;
+              h4{
+                font-family: "Open Sans Regular";
+                font-size: 20px;
+                margin-top: 0;
+              }
+              p{
+                font-family: "Open Sans Regular";
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#news{
+  div{
+    div{
+      font-family: "Open Sans Regular";
+      p:first-child{
+        background-color: #6fa900;
+        color: #fff;
+        padding: 2px 6px;
+        display: inline-flex;
+      }
+      p{
+        font-size: 15px;
+      }
+      h4{
+        font-size: 20px;
+      }
+    }
+  }
+}
+#skilful{
+  background: url("../img/pergola.jpg") no-repeat center;
+  background-size: cover;
+  color: #fff;
+  div{
+    div{
+      background-color: rgba(0, 0, 0, 0.5);
+      h4{
+        font-family: "Open Sans Light";
+        font-size: 25px;
+      }
+      p{
+        font-family: "Open Sans Regular";
+        font-size: 15px;
+        margin-bottom: 10%;
+      }
+      div.inform{
+        font-family: "Open Sans Light";
+        font-size: 20px;
+        background: none;
+        div{
+          background: none;
+          p{
+            margin-bottom: 0;
+          }
+        }
+      }
+      a{
+        p{
+          font-family: "Open Sans Regular";
+          font-size: 15px;
+          color: #afe548;
+          margin: 15px 0;
+        }
+      }
+      div{
+        background: none;
+      }
+      div:last-child{
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+#difficulty_raiting{
+  padding-left: 0;
+  li{
+    list-style: none;
+    float:left;
+    width: 19px;
+    height: 18px;
+    background: url("../img/star_sprite.png") no-repeat;
+    margin-right: 2px;
+    &.full{
+      background-position: bottom;
+    }
+    &.empty{
+      background-position: top;
+    }
+  }
+}
+// wood species
+#woodSpecies{
+  div.row:nth-child(2){
+    div{
+      a{
+        div{
+          div{
+            height: 270px;
+            margin: 0 5px;
+            background-size: contain;
+            div.arrowHover{
+              height: 70%;
+
+            }
+            div{
+              margin: 0 5%!important;
+              height: 30%;
+              background: none;
+              p{
+                font-family: "Open Sans Regular";
+                font-size: 20px;
+                text-align: center;
+              }
+              p:last-child{
+                font-size: 17px;
+                display: none;
+                padding: 2px 5px;
+                background: #90bc3b;
+              }
+            }
+          }
+        }
+        &:hover{
+          div{
+            background-color: rgba(0, 0, 0, 0.5);
+            div{
+              div.arrowHover{
+                background: url("../img/arrow.png")no-repeat center;
+                opacity: 1;
+              }
+              div{
+                background: none;
+                p{
+                  color: #fff;
+                }
+                p:last-child{
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.larch{
+  background: url("../img/larch.jpg") no-repeat top center;
+  background-size: 100%;
+  div{
+    margin: 0!important;
+  }
+}
+.pine{
+  background: url("../img/pine.jpg") no-repeat top center;
+  background-size: 100%;
+  div{
+    margin: 0!important;
+  }
+}
+.linden{
+  background: url("../img/linden.jpg") no-repeat top center;
+  background-size: 100%;
+  div{
+    margin: 0!important;
+  }
+}
+.oak{
+  background: url("../img/oak.jpg") no-repeat top center;
+  background-size: 100%;
+  div{
+    margin: 0!important;
+  }
+}
+//footer
+footer{
+  background: #998658;
+  color: #fff;
+  div{
+    margin-top: 15px;
+    div{
+      margin-top: 0;
+      div{
+        div{
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+  h3{
+    font-family: "Open Sans Semibold";
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  p{
+    font-family: "Open Sans Light";
+    font-size: 15px;
+  }
+  a{
+    p{
+      color: #fff;
+    }
+  }
+}
+#myModal{
+  z-index: 99999;
+}
+.modal-header{
+  button.close:hover, button.close:focus{
+    color: #8cc63e;
+    opacity: 1;
+  }
+}
+#checkForm{
+  color: #b3b3b3;
+}
